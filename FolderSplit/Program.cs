@@ -58,6 +58,7 @@ namespace FolderSplit
 
         private static void FileDeleteEventOnDeleteCopiedFiles(object sender, FileDeleteEventArgs e)
         {
+            Console.WriteLine("Showing files being deleted.");
             File.Delete(e.FileName);
         }
     }
